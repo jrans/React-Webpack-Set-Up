@@ -6,6 +6,7 @@ var App = React.createClass({
     return(
       <div>
         <h1>Hey Fac6</h1>
+        <p>Git clone https://github.com/jrans/React-Webpack-Set-Up</p>
       </div>
     );
   }
