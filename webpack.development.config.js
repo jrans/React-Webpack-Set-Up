@@ -1,13 +1,15 @@
 var webpack = require('webpack');
 
 module.exports = {
+
     entry: [
       'webpack/hot/dev-server',
       "./src/js/main.js"
     ],
     output: {
       path: __dirname + '/public',
-      filename: "bundle.js"
+      filename: "bundle.js",
+      publicPath: "/public/"
     },
     module: {
       loaders: [
