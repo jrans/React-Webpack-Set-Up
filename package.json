@@ -26,13 +26,14 @@
     "react-dom": "^0.14.1"
   },
   "devDependencies": {
-    "css-loader": "^0.21.0",
-    "react-hot-loader": "^1.3.0",
-    "webpack-dev-server": "^1.12.1",
     "babel-core": "^6.0.15",
     "babel-loader": "^6.0.0",
-    "jsx-loader": "^0.13.2",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "css-loader": "^0.21.0",
+    "react-hot-loader": "^1.3.0",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.2"
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
   }
 }

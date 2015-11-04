@@ -1,5 +1,5 @@
 # React-Webpack-Set-Up
-Simple set up including hot reloading for a React web app
+Simple set up including hot reloading for a React web app. Allows for es2015 and react presets in the .babelrc so es6 away!
 
 ## How to work it!
 
