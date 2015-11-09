@@ -4,8 +4,8 @@
   "description": "Blank set up for new React Project",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.production.config.js --progress --colors && open public/index.html",
-    "dev": "open http://localhost:8080/public && webpack-dev-server --hot --inline --progress --colors --config webpack.development.config.js"
+    "build": "webpack --config webpack.production.config.js --progress --colors",
+    "dev": "webpack-dev-server --hot --inline --progress --colors --config webpack.development.config.js"
   },
   "repository": {
     "type": "git",
