@@ -1,7 +1,7 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "Blank set up for new React Project with testing runner included",
+  "description": "Blank set up for new React Project with webpack and testing runner included",
   "main": "index.js",
   "scripts": {
     "dev:test": "./node_modules/.bin/webpack --config webpack.test.config.js",
@@ -18,7 +18,8 @@
     "Hot Loading",
     "Test Runner",
     "ES6",
-    "Babel"
+    "Babel",
+    "tape"
   ],
   "author": "jrans",
   "license": "ISC",
