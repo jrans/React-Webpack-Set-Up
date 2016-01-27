@@ -1,14 +1,11 @@
 var webpack = require('webpack');
 
 module.exports = {
-
     entry: [
       'webpack/hot/dev-server',
-      "./src/js/main.js"
+      "./src/"
     ],
     output: {
-      path: __dirname + '/public',
-      filename: "bundle.js",
       publicPath: "/public/"
     },
     module: {
@@ -18,7 +15,10 @@ module.exports = {
       ]
     },
     plugins: [
-      new webpack.NoErrorsPlugin()
-    ]
-
+      new webpack.NoErrorsPlugin(),
+      new webpack.HotModuleReplacementPlugin()
+    ],
+    inline: true,
+    progress: true,
+    colors: true
 };

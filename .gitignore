@@ -6,4 +6,4 @@ logs
 
 node_modules
 
-public/bundle.js
+test/bundle.js
