@@ -1,24 +1,27 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: [
+    entry     : [
+      'webpack-dev-server/client?http://localhost:8080',
       'webpack/hot/dev-server',
-      "./src/"
+      "./src/js/"
     ],
-    output: {
-      publicPath: "/public/"
+    output    : {
+      publicPath : "/public/"
     },
-    module: {
-      loaders: [
-        { test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot','babel']},
+    module    : {
+      loaders : [
+        {
+          test    : /\.js$/,
+          exclude : /node_modules/,
+          loaders : ['react-hot','babel']
+        },
         { test: /\.css$/, loader: 'style!css'}
       ]
     },
-    plugins: [
-      new webpack.NoErrorsPlugin(),
-      new webpack.HotModuleReplacementPlugin()
-    ],
-    inline: true,
-    progress: true,
-    colors: true
+    devServer : { hot: true },
+    plugins   : [ new webpack.HotModuleReplacementPlugin() ],
+    inline    : true,
+    progress  : true,
+    colors    : true
 };
